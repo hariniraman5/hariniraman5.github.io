@@ -549,7 +549,7 @@
   /* Highlights Section */
   .highlights ul {
     list-style: disc;
-    margin-left: -60px;
+    margin-left: -70px;
   }
 
   .highlights li {
@@ -702,7 +702,7 @@
   }
   
   .grey-text {
-    color: #666 !important;
+    color: #151414 !important;
   }
   
   /* main .teal-text */
