@@ -6,45 +6,66 @@
     <title>Harini's Portfolio</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Hi, I am Harini. Welcome to my Portfolio!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="profile-pic">
+                <img src="https://via.placeholder.com/130" alt="Profile Picture">
+            </div>
+            <h1>Hi, I am Harini. Welcome to my Portfolio!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Hariniraman. I'm a [Your Profession]. Welcome to my portfolio!</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Hariniraman. I'm a [Your Profession]. Welcome to my portfolio!</p>
+        </div>
     </section>
     
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </li>
-            <li>
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </li>
+            </ul>
+        </div>
     </section>
     
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <div class="social">
+                <a href="https://github.com/hariniraman5" class="icon-btn github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hariniraman5" class="icon-btn linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Harini Raman. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Harini Raman. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
