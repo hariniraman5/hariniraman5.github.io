@@ -68,7 +68,7 @@
   }
   
   .linkedin:hover {
-    background-color: #f9dc7a;
+    background-color: #0077b5;
   }
   
   .angellist:hover {
@@ -85,7 +85,7 @@
     position: relative;
     padding: 11px 35px;
     background: #fff;
-    color: #f2c739;
+    color: #00796b;
     border: 2px solid #fff;
     font-weight: 600;
     font-size: 15px;
@@ -116,7 +116,7 @@
   }
   
   .contactme:hover{
-    color: #eecf45;
+    color: #00796b;
     background-color: white;
   }
   /* main body */
@@ -140,7 +140,7 @@
   } */
   
   a {
-    color: #f2c739;
+    color: #004d40;
   }
   
   /* main blockqoute */
@@ -320,7 +320,7 @@
   } */
   
   #intro.section {
-    background: #f2c739 repeat;
+    background: #a7ffeb repeat;
     position: relative;
   }
   
@@ -549,7 +549,7 @@
   /* main .teal-text */
   
   .teal-text {
-    color: #f2c739 !important;
+    color: #008073 !important;
   }
   
   /* .teal-text {
@@ -559,7 +559,7 @@
   /* .teal */
   
   .teal {
-    background-color: #f2c739 !important;
+    background-color: #008073 !important;
   }
   
   /* .teal {
@@ -602,7 +602,7 @@
       position: absolute;
     }
     nav a.button-collapse, nav a.button-collapse i {
-      color: #f2c739;
+      color: #009688;
       height: 56px;
       line-height: 56px;
     }
