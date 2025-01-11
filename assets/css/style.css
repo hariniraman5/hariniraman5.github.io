@@ -11,7 +11,7 @@
     /* background-size: cover;  */
     margin: -31px; 
     margin-left:-7px;
-    border: 6px solid rgba(255, 215, 0, 0.4); 
+    border: 6px solid rgba(224, 199, 56, 0.4); 
     border-radius: 50% !important;
   }
   
@@ -320,7 +320,7 @@
   } */
   
   #intro.section {
-    background: #ffdf80 repeat;
+    background: #ffec7e repeat;
     position: relative;
   }
   
@@ -356,7 +356,7 @@
   }
   
   .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(135, 120, 120, 0.623);
     height: 100%;
     left: 0;
     position: absolute;
@@ -457,13 +457,14 @@
   /* Titles Section */
   .titles {
     position: relative; /* For arrow positioning */
-    text-align: center;
+    text-align: left;
   }
 
   .titles p {
     margin: 40px 0;
     font-weight: bold;
     position: relative;
+    text-align: left;
   }
 
     /* Add ball on top and line */
@@ -474,7 +475,7 @@
       background-color: gold; /* Gold ball */
       border-radius: 50%; /* Makes it a perfect circle */
       position: absolute;
-      top: -20px; /* Position above the title */
+      top: -10px; /* Position above the title */
       right: 80%; /* Center align */
       transform: translateX(-50%);
   } 
@@ -483,9 +484,9 @@
     content: ""; /* Empty content for line */
     width: 2px;
     height: 20px;
-    background-color: gold; /* Gold line */
+    background-color: #e1c529; /* Gold line */
     position: absolute;
-    top: -15px; /* Position just below the ball */
+    top: -10px; /* Position just below the ball */
     right: 83%; /* Center align */
     transform: translateX(-50%);
   }
@@ -494,64 +495,67 @@
   .timeline {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
     position: relative;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   
   .timeline-item {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 20px 0; /* Spacing between levels */
+    padding: 6px 0; /* Spacing between levels */
   }
   
   .timeline-item .dot {
     width: 20px;
     height: 20px;
-    background-color: gold;
+    background-color: #e1c529;
     border-radius: 50%; /* Makes the dot a circle */
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin-right: 20px; /* Space between dot and text */
   }
   
   .timeline-item p {
-    margin: 0;
+    margin: 2;
     font-size: 16px;
     font-weight: bold;
+    text-align: left !important;
   }
   
   .timeline-item::before {
     content: ""; /* Vertical line between dots */
     width: 2px;
-    background-color: gold;
+    background-color: #f5ec9d;
     position: absolute;
-    top: 0;
-    left: 10px; /* Align with the center of the dot */
+    top: 0px;
+    bottom: 0px;
+    left: 9px; /* Align with the center of the dot */
     height: 100%; /* Line spans the whole container */
-    z-index: 0;
+    z-index: 1;
   }
   
   .timeline-item:first-child::before {
     top: 50%; /* Start line at the center of the first dot */
-    height: 50%;
+    height: 100%;
   }
   
   .timeline-item:last-child::before {
-    height: 50%; /* End line at the center of the last dot */
+    height: 50%; /* Start line at the center of the first dot */
+    bottom: 0; /* End line at the center of the last dot */
   }
   
 
   /* Highlights Section */
   .highlights ul {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: -60px;
   }
 
   .highlights li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-size: 14px;
+    padding: 3px;
   }
 
   /* Responsiveness: Adjust spacing for smaller screens */
@@ -714,7 +718,7 @@
   /* .teal */
   
   .teal {
-    background-color: #c5b144 !important;
+    background-color: #9b8c38 !important;
   }
   
   /* .teal {
