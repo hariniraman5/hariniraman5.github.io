@@ -376,8 +376,9 @@
   background-color: #c5b144 !important; /* Replace blue-grey with your gold color */
   }
 
-  .card {
-    margin-bottom: 60px;
+  .card img {
+    max-height: 100px;
+    margin-bottom: 15px;
   }
   
   .card .role {
@@ -432,6 +433,143 @@
     max-height: 60px;
   }
   
+    /* Flexbox container for Experience Section */
+  .flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px; /* Reduce the gap between columns */
+    margin-top: 20px;
+  }
+
+  /* Flex items for columns */
+  .flex-item {
+    flex: 1;
+  }
+
+  /* Logos Section */
+  .logos img {
+    display: block;
+    margin: 30px auto;
+    width: 120px; /* Adjust as needed */
+  }
+
+  /* Titles Section */
+  .titles {
+    position: relative; /* For arrow positioning */
+    text-align: center;
+  }
+
+  .titles p {
+    margin: 40px 0;
+    font-weight: bold;
+    position: relative;
+  }
+
+    /* Add ball on top and line */
+    .titles p::before {
+      content: ""; /* Empty content for ball */
+      width: 10px;
+      height: 10px;
+      background-color: gold; /* Gold ball */
+      border-radius: 50%; /* Makes it a perfect circle */
+      position: absolute;
+      top: -20px; /* Position above the title */
+      right: 80%; /* Center align */
+      transform: translateX(-50%);
+  } 
+
+  .titles p::after {
+    content: ""; /* Empty content for line */
+    width: 2px;
+    height: 20px;
+    background-color: gold; /* Gold line */
+    position: absolute;
+    top: -15px; /* Position just below the ball */
+    right: 83%; /* Center align */
+    transform: translateX(-50%);
+  }
+  
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0; /* Spacing between levels */
+  }
+  
+  .timeline-item .dot {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    border-radius: 50%; /* Makes the dot a circle */
+    position: relative;
+    z-index: 1;
+    margin-right: 20px; /* Space between dot and text */
+  }
+  
+  .timeline-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .timeline-item::before {
+    content: ""; /* Vertical line between dots */
+    width: 2px;
+    background-color: gold;
+    position: absolute;
+    top: 0;
+    left: 10px; /* Align with the center of the dot */
+    height: 100%; /* Line spans the whole container */
+    z-index: 0;
+  }
+  
+  .timeline-item:first-child::before {
+    top: 50%; /* Start line at the center of the first dot */
+    height: 50%;
+  }
+  
+  .timeline-item:last-child::before {
+    height: 50%; /* End line at the center of the last dot */
+  }
+  
+
+  /* Highlights Section */
+  .highlights ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  .highlights li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Responsiveness: Adjust spacing for smaller screens */
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      gap: 20px; /* Increase gap for vertical stacking */
+    }
+
+    .titles p:not(:last-child)::after {
+      left: auto; /* Default position for centered layout */
+      transform: none;
+    }
+  }
+
+
+
   .card-action span {
     font-size: 85%;
     color: #666;
@@ -462,6 +600,17 @@
   
   .card i.right {
     margin-left: 10px;
+  }
+
+  .card-content h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
   }
   
   a.hoverline {
