@@ -55,7 +55,7 @@
   }
   
   .linkedin {
-    color: #0077b5;
+    color: #927f19;
   }
   
   .angellist {
@@ -68,7 +68,7 @@
   }
   
   .linkedin:hover {
-    background-color: #0077b5;
+    background-color: #c5b144;
   }
   
   .angellist:hover {
@@ -367,9 +367,15 @@
   .waves-effect.waves-blue .waves-ripple {
     /* The alpha value allows the text and background color
      of the button to still show through. */
-    background-color: #ffab40;
+    background-color: #c5b144;
+
   }
   
+  /* Override Materialize button background color */
+  .btn-floating.waves-effect.waves-light {
+  background-color: #c5b144 !important; /* Replace blue-grey with your gold color */
+  }
+
   .card {
     margin-bottom: 60px;
   }
